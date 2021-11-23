@@ -2,8 +2,8 @@ import ClockBody from "./ClockBody";
 import PropTypes from "prop-types";
 
 const Clock = (props) => {
-  const onDelete = (event) => {
-    props.deleteClock(event.target.id);
+  const onDelete = (_event) => {
+    props.deleteClock(props.id);
   }
 
   return (
